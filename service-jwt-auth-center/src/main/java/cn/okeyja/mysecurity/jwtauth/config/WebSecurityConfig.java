@@ -1,6 +1,6 @@
 package cn.okeyja.mysecurity.jwtauth.config;
 
-import cn.okeyja.mysecurity.jwtauth.service.security.UserServiceDetail;
+import cn.okeyja.mysecurity.jwtauth.service.impl.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -39,7 +39,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Autowired
-    UserServiceDetail userServiceDetail;
+    UserDetailsServiceImpl userServiceDetail;
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {

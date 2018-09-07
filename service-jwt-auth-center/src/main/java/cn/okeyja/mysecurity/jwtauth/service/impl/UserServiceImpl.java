@@ -1,8 +1,9 @@
-package cn.okeyja.mysecurity.jwtauth.service;
+package cn.okeyja.mysecurity.jwtauth.service.impl;
 
 
 import cn.okeyja.mysecurity.jwtauth.domain.User;
 import cn.okeyja.mysecurity.jwtauth.repository.UserDao;
+import cn.okeyja.mysecurity.jwtauth.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package cn.okeyja.mysecurity.jwtauth.service.security;
+package cn.okeyja.mysecurity.jwtauth.service.impl;
 
 import cn.okeyja.mysecurity.jwtauth.repository.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
  * Created by fangzhipeng on 2017/5/10.
  */
 @Service
-public class UserServiceDetail implements UserDetailsService {
+public class UserDetailsServiceImpl implements UserDetailsService {
 
     @Autowired
     private UserDao userRepository;
