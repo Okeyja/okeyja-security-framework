@@ -4,6 +4,15 @@ It is a useful common way, and it has a very high performance because all the TO
 
 [Learn more about JWT (JSON Web Tokens)](https://jwt.io/ "JWT").
 
+## Generate Public and Private Keys
+* Private key - okeyja-jwt.jks
+```
+keytool -genkeypair -alias okeyja-jwt -validity 3650 -keyalg RSA -dname "CN=jwt,OU=jtw,O=jtw,L=zurich,S=zurich,C=CH" -keypass okeyja -keystore okeyja-jwt.jks -storepass okeyja123
+```
+* Public Key - public.cert
+```
+keytool -list -rfc --keystore okeyja-jwt.jks | openssl x509 -inform pem -pubkey
+```
 ## APIs
 ### [POST] /oauth/token
 Check the user's login and return a JWT to access the protected resources.
