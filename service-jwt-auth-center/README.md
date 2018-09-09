@@ -7,7 +7,7 @@ It is a useful common way, and it has a very high performance because all the TO
 ## Generate Public and Private Keys
 * Private key - okeyja-jwt.jks
 ```
-keytool -genkeypair -alias okeyja-jwt -validity 3650 -keyalg RSA -dname "CN=jwt,OU=jtw,O=jtw,L=zurich,S=zurich,C=CH" -keypass okeyja -keystore okeyja-jwt.jks -storepass okeyja123
+keytool -genkeypair -alias okeyja-jwt -validity 3650 -keyalg RSA -dname "CN=Okeyja,OU=Okeyja.cn,O=OkeyjaAccountBook,L=Chengdu,S=Sichuan,C=CH" -keypass okeyja -keystore okeyja-jwt.jks -storepass okeyja123
 ```
 * Public Key - public.cert
 ```
